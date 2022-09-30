@@ -1,10 +1,10 @@
-<h1>ChatApp</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<% if current_user %>
-  <%= link_to "Start Chatting", "#" %>
-  <%= button_to "Logout", destroy_user_session_path, method: :delete %>
-<% else %>
-  <%= link_to "Login", new_user_session_path %>
-  <%= link_to "Sign Up", new_user_registration_path %>
-<% end %>
+<div class="bg-dark text-light">
+  <% if current_user %>
+    <a href="/rooms" class="btn btn-primary mx-2 my-2" role="button">Start Chatting</a>
+    <%= button_to "Logout", destroy_user_session_path, class: 'btn btn-primary mx-2 my-2', method: :delete %>
+  <% else %>
+    <%= button_to "Login", new_user_session_path, class: 'btn btn-primary mx-2 my-2' %>
+    <%= link_to "Sign Up", new_user_registration_path %>
+    <%= button_to "Sign Up", new_user_registration_path, class: 'btn btn-primary mx-2 my-2' %>
+  <% end %>
+</div>
