@@ -3,8 +3,7 @@
     <a href="/rooms" class="btn btn-primary mx-2 my-2" role="button">Start Chatting</a>
     <%= button_to "Logout", destroy_user_session_path, class: 'btn btn-primary mx-2 my-2', method: :delete %>
   <% else %>
-    <%= button_to "Login", new_user_session_path, class: 'btn btn-primary mx-2 my-2' %>
-    <%= link_to "Sign Up", new_user_registration_path %>
-    <%= button_to "Sign Up", new_user_registration_path, class: 'btn btn-primary mx-2 my-2' %>
+    <%= link_to "Login", new_user_session_path, class: 'btn btn-primary mx-2 my-2' %>
+    <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary mx-2 my-2' %>
   <% end %>
 </div>
