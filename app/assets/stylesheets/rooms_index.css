@@ -1,7 +1,21 @@
 #chatroom_container {
   font-family: 'Ubuntu Light', Ubuntu;
+  height: 100vh;
+  margin-right: 0px !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #room_container {
   font-family: 'Poppins Light', Poppins;
+  height: 100vh;
+  margin-right: 0px !important;
+}
+
+#side_panel {
+  height: calc(100vh - 55px);
+  margin-right: 0px !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 55px;
 }
